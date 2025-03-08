@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNests</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="dark:bg-dark dark:text-white font-[poppins] flex justify-center items-center min-h-screen bg-white"
+  >
+  <nav
+  class="flex items-center justify-between dark:bg-dark_secondary bg-primary2 px-3 md:px-32 py-3 fixed top-0 right-0 left-0"
+>
+  <p
+    class="dark:bg-secondary bg-primary text-white dark:text-dark_secondary px-3 py-2 rounded-lg text-xl font-semibold cursor-default tracking-wider lg:block hidden"
+  >
+    TechNests
+  </p>
+
+  <ul class="hidden gap-3 items-center lg:flex" id="nav">
+    <li
+      class="px-3 py-2 dark:hover:bg-secondary transition-colors hover:bg-primary rounded-md cursor-pointer"
+    >
+      <a href="home-page.html">Home</a>
+    </li>
+    <li
+      class="px-3 py-2 dark:hover:bg-secondary transition-colors hover:bg-primary rounded-md cursor-pointer"
+    >
+      <a href="products.html">Products</a>
+    </li>
+    <li
+      class="px-3 py-2 dark:hover:bg-secondary transition-colors hover:bg-primary rounded-md cursor-pointer"
+    >
+      <a href="cart.html">Cart</a>
+    </li>
+    <li
+      class="px-3 py-2 dark:hover:bg-secondary transition-colors hover:bg-primary rounded-md cursor-pointer"
+    >
+      <a href="favourites.html">Favourites</a>
+    </li>
+    
+
+    <li
+      class="px-3 py-2 dark:hover:bg-secondary transition-colors hover:bg-primary rounded-md cursor-pointer"
+    >
+      <a href="about.html">About</a>
+    </li>
+  </ul>
+
+  <div class="dropdown dropdown-bottom lg:hidden block">
+    <div tabindex="0" role="button" class="btn border-transparent m-1">
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        class="h-6 w-6"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        ></path>
+      </svg>
+    </div>
+    <ul
+      tabindex="0"
+      class="dropdown-content menu dark:bg-dark_secondary bg-primary2 rounded-box z-[1] w-56 p-2 shadow mt-4" id="nav2"
+    >
+      <li
+        class="dark:hover:bg-dark_3 transition-colors hover:bg-primary3 hover:text-white rounded-xl cursor-pointer"
+      >
+        <a href="home-page.html">Home</a>
+      </li>
+
+      <li
+        class="dark:hover:bg-dark_3 transition-colors hover:bg-primary3 hover:text-white rounded-xl cursor-pointer"
+      >
+        <a href="products.html">Products</a>
+      </li>
+      <li
+        class="dark:hover:bg-dark_3 transition-colors hover:bg-primary3 hover:text-white rounded-xl cursor-pointer"
+      >
+        <a href="cart.html">Cart</a>
+      </li>
+      <li
+        class="dark:bg-dark_3 bg-primary3 text-white rounded-xl cursor-pointer"
+      >
+        <a href="#">Favourites</a>
+      </li>
+      <li
+        class="dark:hover:bg-dark_3 transition-colors hover:bg-primary3 hover:text-white rounded-xl cursor-pointer"
+      >
+        <a href="about.html">About</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <button class="mode w-12 h-12 flex items-center justify-center">
+      <svg
+        class="moon stroke-sky-800 w-10 h-10"
+        height="100"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 100 100"
+        width="100"
+        x="0"
+        xmlns="http://www.w3.org/2000/svg"
+        y="0"
+      >
+        <path
+          class="svg-stroke-primary"
+          d="M82.1,61.2a31.9,31.9,0,0,1-12.4,2.4A33.3,33.3,0,0,1,36.4,30.3a31.9,31.9,0,0,1,2.4-12.4A33.3,33.3,0,1,0,82.1,61.2Z"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        ></path>
+      </svg>
+      <svg
+        class="sun stroke-yellow-500 w-10 h-10"
+        height="100"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 100 100"
+        width="100"
+        x="0"
+        xmlns="http://www.w3.org/2000/svg"
+        y="0"
+      >
+        <path
+          class="svg-stroke-primary"
+          d="M50,18v3.6m0,56.8V82M82,50H78.4M21.6,50H18M72.6,72.6l-2.5-2.5M29.9,29.9l-2.5-2.5m45.2,0-2.5,2.5M29.9,70.1l-2.5,2.5M64.2,50A14.2,14.2,0,1,1,50,35.8,14.3,14.3,0,0,1,64.2,50Z"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        ></path>
+      </svg>
+    </button>
+    <button
+      id="logout"
+      class="px-3 py-2 rounded-md bg-primary dark:bg-secondary hover:opacity-90 transition text-white uppercase"
+    >
+      Logout
+    </button>
+  </div>
+</nav>
+    <div class="flex flex-col p-3 rounded-lg max-w-2xl gap-8 items-center">
+      <h1
+        class="md:text-6xl text-3xl sm:flex-row flex-col font-black flex items-center gap-5 text-center"
+      >
+        Order Placed Successfully
+      </h1>
+      <p class="text-xl text-center">
+        our order has been placed and will be delivered to you in a few days
+      </p>
+      <p class="text-xl text-center hover:dark:text-secondary underline hover:text-primary">
+        <a href="products.html">Continue Shopping ></a>
+      </p>
+    </div>
+    <script type="module" src="home.js"></script>
+    <script src="theme.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  </body>
+</html>
